@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 import os
 
-st.set_page_config(page_title="SVC V3 - Predicción SAIDI", layout="centered")
+st.set_page_config(page_title="SVC V5 - Predicción SAIDI", layout="centered")
 
 st.title("Predicción SAIDI — SVC V5")
 st.markdown("Carga el modelo y los transformadores desde la carpeta Joblib y completa los campos para predecir SAIDI.")
@@ -50,8 +50,8 @@ with col1:
 
 with col2:
     clientes = st.number_input('Clientes Instalados', min_value=0, value=1000)
-    viento_viento = st.number_input('viento_Viento (m/s)', value=2.5, format="%.2f")
-    viento_rafagas = st.number_input('viento_Rafagas (m/s)', value=3.0, format="%.2f")
+    viento_viento = st.number_input('viento_Viento (km/h)', value=2.5, format="%.2f")
+    viento_rafagas = st.number_input('viento_Rafagas (km/h)', value=3.0, format="%.2f")
     viento_nubosidad = st.number_input('viento_Nubosidad (%)', min_value=0.0, max_value=100.0, value=20.0, format="%.1f")
     viento_precip = st.number_input('viento_Precipitacion (mm)', min_value=0.0, value=0.0, format="%.2f")
     viento_presion = st.number_input('viento_PresionAtm (hPa)', value=1013.0, format="%.2f")
