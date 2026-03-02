@@ -6,11 +6,11 @@ import os
 
 st.set_page_config(page_title="SVC V3 - Predicción SAIDI", layout="centered")
 
-st.title("Predicción SAIDI — SVC V3")
+st.title("Predicción SAIDI — SVC V5")
 st.markdown("Carga el modelo y los transformadores desde la carpeta Joblib y completa los campos para predecir SAIDI.")
 
 # rutas esperadas
-MODEL_PATH = os.path.join('Joblib', 'best_SVC_model_V4.joblib')
+MODEL_PATH = os.path.join('Joblib', 'best_SVC_model_V5.joblib')
 ENCODER_PATH = os.path.join('Joblib', 'One_encoder.joblib')
 SCALER_PATH = os.path.join('Joblib', 'MinMax_escaler.joblib')
 
